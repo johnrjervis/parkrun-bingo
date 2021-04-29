@@ -1,3 +1,11 @@
+"""
+This is attempt #2, which is based on Pandas Dataframes
+Typical time to solve 1 million iterations of 146 results: ~80 s
+Using DF is quicker (1st - procedural - solution typically took ~140 s to complete 1 million x 146)
+Issues: running with 10 million iterations results in the program being "killed" - caused by high memory usage of the 10000000 x 146 array?
+Hence attempt to redue memory use by using dtype = int8
+"""
+
 import numpy as np
 import pandas as pd
 
