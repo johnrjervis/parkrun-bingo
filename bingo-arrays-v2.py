@@ -43,4 +43,4 @@ if __name__ == "__main__":
     else:
         t0 = pc(); prob, short = bingo_array(int(runs)); runtime = pc() - t0
 
-    print("Time taken: {0:.3f} s\nResults: probability = {1:.4f}%, expected short = {2:.3f}".format(runtime, prob, short))
+    print(f'Time taken: {runtime:.3f} s\nResults: probability = {prob:.4f}%, expected short = {short:.3f}')
